@@ -1,0 +1,16 @@
+ <!ELEMENT books (book+)>
+<!ELEMENT book (title*,edition,author+,publishedDate,type,price)>
+<!ATTLIST book isbn CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title type CDATA #IMPLIED>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT author (first*,middle,last*)>
+<!ELEMENT first (#PCDATA)>
+<!ELEMENT middle (#PCDATA)>
+<!ELEMENT last (#PCDATA)>
+<!ELEMENT publishedDate (month,day,year)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
